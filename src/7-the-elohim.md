@@ -1,6 +1,6 @@
 # 7
 ---
-# The Elohim
+# THE ELOHIM
 
 
 ## Nuclear Weapons

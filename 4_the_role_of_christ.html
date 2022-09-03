@@ -1,0 +1,407 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The Role of Christ - The Book Which Tells The Truth</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Web book of Rael&#x27;s first publication.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">The Book Which Tells The Truth</li><li class="chapter-item expanded "><a href="1_the_encounter.html"><strong aria-hidden="true">1.</strong> The Encounter</a></li><li class="chapter-item expanded "><a href="2_the_truth.html"><strong aria-hidden="true">2.</strong> The Truth</a></li><li class="chapter-item expanded "><a href="3_watching_over_the_chosen_people.html"><strong aria-hidden="true">3.</strong> Watching over the Chosen People</a></li><li class="chapter-item expanded "><a href="4_the_role_of_christ.html" class="active"><strong aria-hidden="true">4.</strong> The Role of Christ</a></li><li class="chapter-item expanded "><a href="5-the-end-of-the-world.html"><strong aria-hidden="true">5.</strong> The End of the World</a></li><li class="chapter-item expanded "><a href="6-the-new-commandments.html"><strong aria-hidden="true">6.</strong> The New Commandments</a></li><li class="chapter-item expanded "><a href="7-the-elohim.html"><strong aria-hidden="true">7.</strong> The Elohim</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><div>Credentials</div></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Book Which Tells The Truth</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/rust-lang/mdBook" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="4"><a class="header" href="#4">4</a></h1>
+<hr />
+<h1 id="the-role-of-christ"><a class="header" href="#the-role-of-christ">THE ROLE OF CHRIST</a></h1>
+<h2 id="the-conception"><a class="header" href="#the-conception">The Conception</a></h2>
+<p>The next morning, we met again at the same spot, and my host said: 'Christ's role was to spread the truth of the biblical scriptures throughout the world, so that they could serve as proof for all of humanity when the age of science would finally explain everything. The creators therefore decided to arrange for a child to be born of a woman of the Earth and one of their own people. The child in question would thereby inherit certain telepathic faculties, which humans lack:</p>
+<blockquote>
+<p>She was found with child of the Holy Ghost.</p>
+<p><em>— Matthew 1: 18.</em></p>
+</blockquote>
+<p>Mary was the woman chosen, and obviously her fiance found these tidings hard to accept, but:</p>
+<blockquote>
+<p>Behold, the angel of Yahweh appeared unto him.</p>
+<p><em>— Matthew 1:20.</em></p>
+</blockquote>
+<p>One of the creators appeared to explain that Mary would bring forth a son of &quot;God&quot;. The prophets, who were in contact with the creators, came from very far away to see the divine child. One of the spacecrafts of the creators guided them:</p>
+<blockquote>
+<p>We have seen his star in the east, and are come to worship him... the star, which they saw in the east, went before them, till it came and stood over where the young child was.</p>
+<p><em>— Matthew 2: 2 and 9.</em></p>
+</blockquote>
+<p>The creators watched over the child:</p>
+<blockquote>
+<p>The angel of Yahweh appeareth to Joseph in a dream, saying, Arise, and take the young child and his mother, and flee into Egypt, and be thou there until I bring thee word: for Herod will seek the young child to destroy him.</p>
+<p><em>— Matthew 2: 13.</em></p>
+</blockquote>
+<p>The king was not too happy about the child-king coming from the people on his territory, which was announced to him by the prophets. But after King Herod died, the creators told Joseph that he could return to Israel:</p>
+<blockquote>
+<p>But when Herod was dead, behold, an angel of Yahweh appeareth in a dream to Joseph in Egypt, Saying, Arise, and take the young child and his mother, and go into the land of Israel: for they are dead which sought the young child's life.</p>
+<p><em>— Matthew 2: 19-20.</em>'</p>
+</blockquote>
+<h2 id="the-initiation"><a class="header" href="#the-initiation">The Initiation</a></h2>
+<p>'When he came of age, Jesus was led to the creators, so that they could reveal to him his true identity, introduce him to his father, reveal his mission and make known to him various scientific techniques.</p>
+<blockquote>
+<p>The heavens were opened unto him, and he saw the Spirit of Yahweh descending like a dove, and lighting upon him: And lo a voice from heaven, saying, 'This is my beloved Son, in whom I am well pleased.' Then was Jesus16 led up of the Spirit into the wilderness to be tempted of the devil...</p>
+<p><em>— Matthew 3: 16-17 and 4: 1.</em></p>
+</blockquote>
+<p>The devil, &quot;Satan&quot;, the creator of whom we spoke previously, was always convinced that nothing good could come of humanity on Earth. He was &quot;Satan the skeptic&quot;, and he was supported by the government's opposition on our distant planet.</p>
+<p>So he tested Jesus to find out if his intelligence was positive, and if he really loved and respected his creators. Having discovered that they could place complete confidence in Jesus, Jesus was allowed to go and accomplish his mission.</p>
+<p>In order to rally people to him, Jesus performed &quot;miracles&quot;, which in reality, were the application of scientific teachings shown to him by the creators:</p>
+<blockquote>
+<p>And they brought unto him all sick people... and he healed them.</p>
+<p><em>— Matthew 4: 24.</em></p>
+</blockquote>
+<blockquote>
+<p>Blessed are the poor in spirit.</p>
+<p><em>— Matthew 5: 3.</em></p>
+</blockquote>
+<p>This sentence has been incorrectly interpreted as &quot;the poor are blessed&quot;. But the original meaning was that if the poor have spirit, then they will be happy - which is totally different.</p>
+<p>Then Jesus told his apostles that they must spread the truth throughout the world. In the prayer called the &quot;Lord's Prayer&quot; or the &quot;Our Father&quot;, the truth is stated literally:</p>
+<blockquote>
+<p>Thy kingdom come. Thy will be done on earth as it is in heaven.</p>
+<p><em>— Matthew 6: 10.</em></p>
+</blockquote>
+<p>In &quot;heaven&quot;, on the creators' planet, the scientists eventually became the ruling group and then created other intelligent beings.</p>
+<p>The same thing will happen on Earth. The torch will be taken up again.</p>
+<p>This prayer, which has been repeated time and time again without anyone understanding its profound meaning, now takes on its full significance: <em>On Earth, as it is in heaven.</em></p>
+<p>Amongst other things, Jesus had been taught to speak convincingly through a type of telepathic group hypnosis:</p>
+<blockquote>
+<p>And so it was, when Jesus had ended these sayings, that the people were astonished at His teaching, for He taught them as one having authority, and not as the scribes.</p>
+<p><em>— Matthew 7: 28-29.</em></p>
+</blockquote>
+<p>He continued to heal the sick with the help of the creators who directed concentrated beams from a distance:</p>
+<blockquote>
+<p>A leper came and worshiped Him, saying, &quot;Lord, if You are willing, You can make me clean.Then Jesus put out His hand and touched him, saying, 'I am willing; be cleansed.' Immediately his leprosy was cleansed.</p>
+<p><em>— Matthew 8: 2-3.</em></p>
+</blockquote>
+<p>And he did the same for a man who was completely paralyzed. The operation was carried out from a distance using a concentrated ray, something like a laser, which burns only one spot through several layers:</p>
+<blockquote>
+<p>Arise, take up thy bed... And he arose.</p>
+<p><em>— Matthew 9: 6-8.</em></p>
+</blockquote>
+<p>Further on in <em>St. Matthew's Gospel</em>, Jesus announced his mission: </p>
+<blockquote>
+<p>For I came not to call the righteous, but sinners.</p>
+<p><em>— Matthew 9: 13.</em></p>
+</blockquote>
+<p>He did not come for the people of Israel, who knew of the existence of the creators, but rather, so that this knowledge would be spread throughout the rest of the world.</p>
+<p>Later there were more &quot;miracles&quot;, somewhat similar to the first ones, all of which were medical. Nowadays there are transplants of hearts and other organs; leprosy and other similar illnesses are cured, and people are brought out of a coma with appropriate care. These would be considered miracles by technologically primitive people. At that time human beings were primitive, and the creators were similar to people of your present &quot;civilized&quot; nations, although a little more advanced scientifically.</p>
+<p>Further on we find an allusion to the creators among whom is Jesus' real father:</p>
+<blockquote>
+<p>Every one therefore who shall confess me before men, him will I also confess before my Father who is in heaven.</p>
+<p><em>— Matthew 10: 32.</em></p>
+</blockquote>
+<p><em>Before my Father who is in heaven</em> — this says it all. In fact, &quot;God&quot; is not intangible or immaterial. He is &quot;in heaven&quot;. This is obviously incomprehensible to people who, at the time, believed that the stars were attached to a heavenly canopy just like pretty light bulbs, all rotating around the center of the world - the Earth. Now, since the advent of space travel and an understanding of the immensity of the universe, the old texts are brought to light in a completely different way.'</p>
+<h2 id="parallel-humanities"><a class="header" href="#parallel-humanities">Parallel Humanities</a></h2>
+<p>'In <em>St. Matthew's Gospel</em>, Chapter 13, there is an important passage where Jesus explains in a parable how the creators left their planet to create life on other worlds:</p>
+<blockquote>
+<p>Behold, a sower went forth to sow; And when he sowed, some seeds fell by the way side, and the fowls came and devoured them up: Some fell upon stony places, where they had not much earth: and forthwith they sprung up, because they had no deepness of earth: And when the sun was up, they were scorched; and because they had no root, they withered away. And some fell among thorns; and the thorns sprung up, and choked them: But other fell into good ground, and brought forth fruit, some an hundredfold, some sixtyfold, some thirtyfold. Who hath ears to hear, let him hear.</p>
+<p><em>— Matthew 13: 3-9.</em></p>
+</blockquote>
+<p>All this is an allusion to the various attempts to create life on other planets — and three of them failed.</p>
+<p>The first failed because of the birds, which came and ate the seeds.</p>
+<p>In fact, this was a failure caused by the proximity of the planet in question to the creators' original planet. Those who were against the creation of people similar to themselves saw a possible threat in the experiment and therefore went to destroy the creation.</p>
+<p>The second attempt was made on a planet too near a sun that was too hot; therefore, their creation was destroyed by noxious radiation.</p>
+<p>The third attempt was made &quot;among thorns&quot; on a planet, which was far too humid, where the plant life was so powerful that it destroyed the equilibrium and the animal world. This world consisting only of plants still exists.</p>
+<p>But the fourth attempt was finally successful on &quot;good ground&quot;.</p>
+<p>And it is important to note that there were in fact three successes in all. This means that on two other planets, which are relatively near to you, there are living beings similar to yourselves who were created by the same creators.</p>
+<p>&quot;Who hath ears to hear, let him hear&quot;; those who are able, understand. When the time comes, those who seek to understand will do so. The others, those who look without really seeing, and hear without really listening or understanding, such people will not understand the truth. On the other hand, those who prove their intelligence by their own efforts and thus show themselves to be worthy
+of their creators' help, they will be helped.</p>
+<blockquote>
+<p>For whosoever hath, to him shall be given, and he shall have more abundance: but whosoever hath not, from him shall be taken away even that he hath.</p>
+<p><em>— Matthew 13: 12</em></p>
+</blockquote>
+<p>The people who will not be able to prove their intelligence will not survive. Humans have almost proved that they are worthy of being recognized by their creators as their equals. They lack only... a little love. Love for each other, and particularly for their creators.</p>
+<blockquote>
+<p>...it is given unto you to know the mysteries of the kingdom of heaven.</p>
+<p><em>— Matthew 13: 11.</em></p>
+</blockquote>
+<p>The three planets, on which life has been created, have been set in competition against one another. The planet on which humanity makes the most scientific progress, thereby proving its intelligence, will receive the benefit of their creators' inheritance on the day of the &quot;last judgement&quot; — so long as they do not behave aggressively towards their creators.</p>
+<p>This will be the day when their knowledge will have reached a sufficiently high level. At present human beings on Earth are not very far away from that day. Human genius is:</p>
+<blockquote>
+<p>Which indeed is the least of all seeds: but when it is grown, it is the greatest among herbs, and becometh a tree, so that the birds of the air come and lodge in the branches thereof.</p>
+<p><em>— Matthew 13: 32.</em></p>
+</blockquote>
+<p>The &quot;birds of the air&quot; here refers to the creators who will come and lodge in the branches; that is to say, will come to give their knowledge to humanity when humanity shows itself worthy of it.</p>
+<blockquote>
+<p>The kingdom of heaven is like unto leaven, which a woman took, and hid in three measures of meal, till the whole was leavened.</p>
+<p><em>— Matthew 13: 33.</em></p>
+</blockquote>
+<p>This is another allusion to the three worlds in which the creators are waiting for science to bloom.</p>
+<blockquote>
+<p>I will utter things which have been kept secret from the foundation of the world.</p>
+<p><em>— Matthew 13: 35</em>.</p>
+</blockquote>
+<p>Here we have something fundamentally important. Planets have a life span, and one day they will no longer be habitable. By that time humanity must have reached a level of scientific knowledge sufficient either to undertake a move to another planet, or if it cannot adapt itself elsewhere, to create a humanoid form of life capable of surviving on another world. If the environment cannot be adapted to suit people, then people must be created who are compatible with the new environment.</p>
+<p>Before humanity becomes extinct, you would, for example, have to create another race of people capable of living in a totally different atmosphere, who would inherit your knowledge before you disappear. So that this inheritance would not be lost, the creators put life on three worlds, and only the best one will be entitled to the inheritance:</p>
+<blockquote>
+<p>So shall it be at the end of the world: the angels shall come forth, and sever the wicked from among the just.</p>
+<p><em>— Matthew 13: 49.</em>'</p>
+</blockquote>
+<h2 id="scientific-miracles"><a class="header" href="#scientific-miracles">Scientific Miracles</a></h2>
+<p>'The passage concerning the multiplication of bread has already been explained. It refers to concentrated food products in the form of large pills, rather like those containing all the vital elements, which your astronauts use. Your &quot;Holy Bread&quot; hosts are reminiscent of these pills. With the equivalent of a few loaves of bread, there is enough to feed thousands of people.</p>
+<p>When Jesus walked on the water, the creators supported him using an anti-gravity beam, which cancelled the effect of weight at a precise point:</p>
+<blockquote>
+<p>He came unto them, walking upon the sea.</p>
+<p><em>— Matthew 14: 25.</em></p>
+</blockquote>
+<p>The beam, in fact, created a turbulence, which is described as follows:</p>
+<blockquote>
+<p>But when he saw the wind boisterous, he (Peter) was afraid... And when they were come into the ship, the wind ceased.</p>
+<p><em>— Matthew 14: 30-32.</em></p>
+</blockquote>
+<p>The &quot;wind ceased&quot; as they boarded the boat, because the beam was switched off when Jesus reached it. Another totally scientific &quot;miracle&quot;.</p>
+<p>In reality, there are no such things as miracles, only differences in levels of civilization. If you had landed at the time of Jesus in a spacecraft, or even a simple helicopter, even though your level of scientific development may have been limited, you would, in the eyes of the people of that time, have been performing miracles.</p>
+<p>Just by producing artificial light, coming from the sky, driving a car, watching television, or even by killing a bird with a gun, because they would have been incapable of understanding the mechanism behind such phenomena, people of the time would have seen in them a divine or supernatural force. Also do not forget that the same scientific gap which exists between you and the people at the time of Jesus, also exists now between you and us. We can still do things, which you would consider &quot;miracles&quot;.</p>
+<p>But for the most advanced individuals among you, they would no longer really be miracles since for the last few decades, you have taken the path of science and are trying to grasp the reason behind things instead of dumbly prostrating yourselves on your bellies and bringing offerings.</p>
+<p>Our knowledge, however, remains such that if we decided to perform a few miracles, even your most eminent scientists would be unable to understand how we did them. There are some particularly well developed minds who would be able to cope with such things, but people in general would simply panic, and we are still capable of astonishing people, even though they are no longer so easily shocked.</p>
+<p>It is necessary for people to understand that there is no ethereal &quot;God&quot;, but only people who created other people in their image.</p>
+<p>In Chapter 17 of <em>St. Matthew's Gospel,</em> the creators appear once again:</p>
+<blockquote>
+<p>Jesus taketh with him Peter, and James, and John his brother, and bringeth them up into a high mountain apart: and he was transfigured before them; and his face did shine as the sun, and his garments became white as the light... And behold, there appeared unto them Moses and Elijah talking with him... behold, a voice out of the cloud, saying, 'This is my beloved Son... hear ye him.'</p>
+<p><em>— Matthew 17: 1-5.</em></p>
+</blockquote>
+<p>This scene happens at night, and the apostles are all frightened to see Jesus illuminated by the powerful searchlights of the spacecraft, out of which Moses and Elijah stepped, still alive thanks to the tree of life from which they had benefited. Immortality is a scientific reality, even if it does not correspond to humanity's idea of immortality.</p>
+<p>In Chapter 19, Verse 30 of <em>St. Matthew,</em> there is a sentence: </p>
+<blockquote>
+<p>But many that are first shall be last; and the last shall be first.</p>
+</blockquote>
+<p>This means that the created shall become creators just as the creators were created.'</p>
+<h2 id="deserving-the-inheritance"><a class="header" href="#deserving-the-inheritance">Deserving the Inheritance</a></h2>
+<p>'In Chapter 25, Verses 14-29 of <em>St. Matthew's Gospel</em>, it is said that the three planets must make scientific progress, and they will be judged one day. We read in the parable: Leaving for a trip, a man entrusted three of his slaves with his goods.The first one received five talents; the second, two talents; the third, one talent.</p>
+<p>When the master returns, the first gave back to him the five talents and shows him five others which he won. The second gave him back the two talents plus two others that he won. The third gave him back only one talent, the one that was given to him.</p>
+<blockquote>
+<p>Take therefore the talent from him, and give it unto him which hath ten talents. For unto every one that hath shall be given, and he shall have abundance: but from him that hath not shall be taken away even that which he hath.</p>
+</blockquote>
+<p>Out of the three worlds where life has been created, the one which makes the most progress will receive the inheritance. The ones which have not progressed will be dominated by the other and eliminated.</p>
+<p>This is also true on Earth between peoples.</p>
+<p>In <em>St. Matthew's Gospel,</em> Chapter 26, Jesus reveals the importance of his death and of the writings, which would later serve as proof. When one of his companions tried to defend him with a sword, he said:</p>
+<blockquote>
+<p>Put up again thy sword into his place: for all they that take the sword shall perish with the sword. Thinkest thou that I cannot now pray to my Father, and he shall presently give me more than twelve legions of angels? But how then shall the scriptures be fulfilled, that thus it must be?</p>
+<p><em>— Matthew 26: 52-54.</em></p>
+</blockquote>
+<p>It was in fact necessary for Jesus to die in order for the truth to be known throughout the world so that later on, when your creators return to Earth, they are not taken for usurpers or invaders. That is the purpose of the biblical and evangelical writings: to preserve traces of the work and presence of your creators, so that they will be recognized when they return.</p>
+<p>After his death, Jesus was resuscitated with the help of the creators:</p>
+<blockquote>
+<p>And, behold, there was a great earthquake: for the angel of Yahweh descended from heaven, and came and rolled back the stone from the door, and sat upon it. His countenance was like lightning, and his raiment white as snow.</p>
+<p><em>— Matthew 28: 2-3.</em></p>
+</blockquote>
+<p>The creators took care of Jesus and revived him. And he said: </p>
+<blockquote>
+<p>Go ye therefore, and teach all nations... Teaching them to observe all things whatsoever I have commanded you.</p>
+<p><em>— Matthew 28: 19-20.</em></p>
+</blockquote>
+<p>Jesus' mission was coming to an end:</p>
+<blockquote>
+<p>So then after Jesus16 had spoken unto them, he was received up into heaven.</p>
+<p><em>— Mark 16: 19.</em></p>
+</blockquote>
+<p>The creators took him away after this last most important phrase: </p>
+<blockquote>
+<p>They shall take up serpents; and if they drink any deadly thing, it shall not hurt them; they shall lay hands on the sick, and they shall recover.</p>
+<p><em>— Mark 16: 18.</em></p>
+</blockquote>
+<p>This refers to humanity discovering anti-venom serums and antidotes, and developing surgery and so on — as is happening now.</p>
+<p>In preparation for their arrival on Earth, the creators will appear more and more frequently, in order to highlight these revelations.</p>
+<p>This also is happening right now.</p>
+<blockquote>
+<p>Behold the fig tree... When they now shoot forth, ye see and know of your own selves that summer is now nigh at hand.</p>
+<p><em>— Luke 21: 29-30.</em></p>
+</blockquote>
+<p>When unidentified flying objects begin appearing in large numbers, as they are doing at present, it means that the time has come. In the <em>Acts of the Apostles</em>, it says, furthermore, in Chapter 2: </p>
+<blockquote>
+<p>And when the day of Pentecost was fully come, they were all with one accord in one place. And suddenly there came a sound from heaven as of a rushing mighty wind, and it filled all the house where they were sitting. And there appeared unto them cloven tongues like as of fire, and it sat upon each of them. And they were all filled with the Holy Spirit, and began to speak with other tongues...</p>
+<p><em>— Acts 2: 1-4.</em></p>
+</blockquote>
+<p>To make it possible for the apostles to spread the truth throughout the world, the creators exposed them to a concentrated burst of teaching sent to them by amplified telepathic waves, a little like electro-shocks, which impregnated their memories with elements of other languages.</p>
+<p>In the <em>Acts of the Apostles,</em> note the numerous appearances made by the creators -the &quot;angels&quot;- particularly when they liberated Peter, who had been chained up by Herod:</p>
+<blockquote>
+<p>And, behold, the angel of Yahweh came upon him, and a light shined in the prison: and he smote Peter on the side, and raised him up, saying, Arise up quickly. And his chains fell off from his hands. And the angel said unto him, Gird thyself, and bind on thy sandals. And so he did. And he saith unto him, Cast thy garment about thee, and follow me. And he went out, and followed him; and wist not that it was true which was done by the angel; but thought he saw a vision.</p>
+<p><em>— Acts 12: 7- 9.</em></p>
+</blockquote>
+<p>Peter, primitive as he was, thought he was having a vision as his chains fell off. He did not know about the electric laser welding torch, which was being used by one of the creators. When such fantastic things happen, people think they are dreaming. This is why it was often said that people who have seen the creators must have had a vision or seen them in a dream. In the same way, it is said that people who have seen our flying saucers must have had hallucinations. In that quotation, it is clearly explained that Peter thought he had seen everything in a dream, but in fact, it was all very real.</p>
+<blockquote>
+<p>They came unto the iron gate that leadeth unto the city; which opened to them of his own accord... and forthwith the angel departed from him.</p>
+<p><em>— Acts 12: 10.</em></p>
+</blockquote>
+<p>Another sign that the time has come is that the people of Israel have regained their country:</p>
+<blockquote>
+<p>After this I will return, and will build again the tabernacle of David, which is fallen down.</p>
+<p><em>— Acts 15: 16.</em></p>
+</blockquote>
+<p>Another important sentence is found in a following chapter:</p>
+<blockquote>
+<p>For we are also his offspring.</p>
+<p><em>— Acts 17: 28</em></p>
+</blockquote>
+<p>This was said by an apostle while speaking of &quot;God&quot;.</p>
+<p>We shall not continue to read further in the Gospels where there are many more references to the creators, because they are less important. You can interpret them yourself for those who ask questions in the light of the explanations I have already given you.'</p>
+<p>And saying that, he left, just as on previous occasions.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="3_watching_over_the_chosen_people.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="5-the-end-of-the-world.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="3_watching_over_the_chosen_people.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="5-the-end-of-the-world.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

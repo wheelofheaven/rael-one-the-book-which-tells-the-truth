@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The New Commandments - Rael I</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Web book of Rael&#x27;s first publication.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">The Book Which Tells The Truth</li><li class="chapter-item expanded "><a href="1_the_encounter.html"><strong aria-hidden="true">1.</strong> The Encounter</a></li><li class="chapter-item expanded "><a href="2_the_truth.html"><strong aria-hidden="true">2.</strong> The Truth</a></li><li class="chapter-item expanded "><a href="3_watching_over_the_chosen_people.html"><strong aria-hidden="true">3.</strong> Watching over the Chosen People</a></li><li class="chapter-item expanded "><a href="4_the_role_of_christ.html"><strong aria-hidden="true">4.</strong> The Role of Christ</a></li><li class="chapter-item expanded "><a href="5-the-end-of-the-world.html"><strong aria-hidden="true">5.</strong> The End of the World</a></li><li class="chapter-item expanded "><a href="6-the-new-commandments.html" class="active"><strong aria-hidden="true">6.</strong> The New Commandments</a></li><li class="chapter-item expanded "><a href="7-the-elohim.html"><strong aria-hidden="true">7.</strong> The Elohim</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><div>Credentials</div></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Rael I</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/rust-lang/mdBook" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="6"><a class="header" href="#6">6</a></h1>
+<hr />
+<h1 id="the-new-commandments"><a class="header" href="#the-new-commandments">THE NEW COMMANDMENTS</a></h1>
+<h2 id="geniocracy"><a class="header" href="#geniocracy">Geniocracy</a></h2>
+<p>I met him the next day, and again he began to speak:</p>
+<p>'First of all, let us look at the political and economic aspects of life.</p>
+<p>What kind of people allows humanity to progress? The geniuses.</p>
+<p>Therefore, your world must revalorize its geniuses and allow them to govern the Earth.</p>
+<p>Power was in the hands of brutes, who were superior to others because of their muscular strength. Next in power were the rich, who used their money to employ many &quot;brutes&quot; in their service. Then came the politicians who ensnared the people of democratic countries with their own hopes — not to mention military men whose success has been based around the rational organization of brutality.</p>
+<p>The only type of people you have never placed in power are the ones who help humanity to progress. Whether they discovered the wheel, gunpowder, the internal combustion engine or the atom, the geniuses have always allowed less intelligent people in power to benefit from their inventions. Often such people have used peaceful inventions for murderous ends. All that must be changed.</p>
+<p>For this to happen, you must abolish all your electoral and polling systems because in their present form, they are completely unsuited to human development. Each person is a useful cell in this huge body we call humanity. The cell in your foot should not decide whether or not your hand should pick up a given object. It is the brain, which must decide, and if the object in question is good, the cell of your foot will benefit from it. It is not up to the foot to vote. Its job is simply to transport the body -including the brain- and it is not
+capable of judging if what the hand takes is good or not.</p>
+<p>Votes only have a positive effect when there is an equivalence of knowledge and intellect. Copernicus was condemned by a majority of incompetent people because he was the only one at that time who had a sufficiently high level of comprehension. Although the Church -that is t  say the majority- believed the Earth was the center of the universe, this turned out to be wrong. The Earth really revolved around the sun, and Copernicus -the minority- turned out to be right.</p>
+<p>When the first cars were invented, if we had asked everyone to vote to establish whether cars should be allowed to exist or not, the majority, who knew nothing about cars and did not care, would have responded negatively, and you would still be riding in a horse and cart. So, how can you change all that?</p>
+<p>These days, you have psychologists who are capable of creating tests to evaluate the intelligence and adaptation of every individual.</p>
+<p>These tests should be applied systematically from infancy onward in order to define each individual's orientation towards subjects studied.</p>
+<p>When individuals reach a responsible age, their intellectual coefficient can be measured and included on their identity or voter's card. Only those with an intellectual capacity of at least fifty per cent above the average should be eligible for a public post. To vote, individuals would need an intellectual coefficient of at least ten per cent above average. If such a system existed now, many of your present politicians would not hold the positions they do today.</p>
+<p>This is a totally democratic system. There are many engineers, for example, who are of lower than average intelligence, but who have very good memories and have obtained several academic degrees because of this.</p>
+<p>On the other hand, there are many laborers or farm workers who have no specialized education at all, but whose intelligence is fifty per cent above the average. What is totally unacceptable now is that the voice of someone whom you might vulgarly call &quot;a cretin&quot; is worth as much as that of a genius, who has thought maturely about the way he or she is going to vote. In some small cities, elections are won by the candidate who buys people the most drinks — not by the individual whose policies are the most interesting.</p>
+<p>Therefore, right from the start, the right to vote should be reserved for those people whose brains are more suited to thinking and finding solutions to problems - that is to say, an elite group of high intelligence. This does not necessarily mean those people who have done the most studying.</p>
+<p>We are talking about placing the genius in power, and you may call that &quot;Geniocracy&quot;.'</p>
+<h2 id="humanitarianism"><a class="header" href="#humanitarianism">Humanitarianism</a></h2>
+<p>'Second point: Your world is paralyzed by profit, and Communism fails to provide a carrot big enough to motivate people and encourage them to make progress.</p>
+<p>You are all born equal; this is also written in the Bible. Your governments should ensure that people are born with approximately the same level of financial means. It is unacceptable that children of low intelligence should live in luxury thanks to the fortunes amassed by their fathers, while geniuses die of hunger and do any menial chore just to eat.</p>
+<p>This way they forsake occupations where they could have made discoveries benefiting the whole of humanity. To avoid this, property ownership must be abolished without establishing Communism.</p>
+<p>This world is not yours - that also is written in the Bible. You are only tenants. Thus all goods should be rented for forty-nine years.</p>
+<p>This will eliminate the injustice of inheritance. Your true inheritance, and that of your children, is the entire world, if you knew how to organize yourselves to make it pleasant. This political orientation of humanity is not Communism; its preoccupation is the future of humanity. If you want to give it a name, call it &quot;Humanitarianism&quot;.</p>
+<p>Take for example a man who has finished his studies at the age of twenty-one and wants to work. He chooses his profession and earns a salary. If he wants to find a place to live while his parents are still alive, he &quot;buys&quot; a house - but of course, in reality, he is renting a house or apartment for forty-nine years from the State which constructed it.</p>
+<p>If the value of the house is estimated at 100,000 francs, he can pay that amount divided into monthly installments for forty-nine years.</p>
+<p>At the age of seventy (twenty-one plus forty-nine), he will have paid for his house and can live there until his death, without ever paying again.</p>
+<p>After his death, the house will go back to the State, which must then allow his children, if there are any, to benefit from it freely.</p>
+<p>Supposing there is one child, then this child can live freely all his life in his father's house. At his death, his child in turn can also benefit from the family house, and so on indefinitely. Inheritance must be completely abolished, except for the family house. This does not, however, prevent each person from being rewarded individually for their merits.</p>
+<p>Let us take another example. Someone has two children. One is a good worker, and the other is lazy. At the age of twenty-one, they both decide to go their own separate ways. They each rent a house worth 100,000 francs.</p>
+<p>The worker will rapidly earn more money than the lazy one. He will then be able to rent a house worth twice as much as the first one.</p>
+<p>If he has the means, he will even be able to rent both houses, one as a country house.</p>
+<p>If his savings are fruitful, he will also be able to build a house and rent it for forty-nine years, thereby receiving money due to him. But at his death, everything will go back to the community, except for the family home, which will go to the children.</p>
+<p>Thus individuals can make a fortune for themselves depending on their own merits, but not for their children. To each their own merits.</p>
+<p>The same should apply to commercial and industrial enterprises. If someone creates a business, it is theirs for their entire life, and they can rent it out, but never for more than forty-nine years. The same goes for farmers. They can rent land and cultivate it for forty-nine years, but after that, it all goes back to the State, which will be able to rent it out again for another forty-nine years. Their children can also rent it for forty-nine years.</p>
+<p>This method must be adopted for all goods that remain exploitable, and as for the value of things, nothing changes. Everything that is of value such as shares, gold, enterprises, cash, or buildings is owned by the community but may be rented for forty-nine years by those who have acquired the means by their own merits and labor.</p>
+<p>In this way, somebody who made a fortune around the age of forty will be able to construct houses, rent them as apartments for forty-nine years, and enjoy that money so long as life lasts.</p>
+<p>Afterwards, the money, which comes from these rents, will go back to the community. This humanitarianism is already prescribed in the Bible:</p>
+<blockquote>
+<p>And thou shalt number seven sabbaths of years unto thee, seven times seven years; and the space of the seven sabbaths of years shall be unto thee forty and nine years.</p>
+<p><em>— Leviticus 25: 8.</em></p>
+</blockquote>
+<blockquote>
+<p>And if thou sell ought unto thy neighbour, or buyest ought of thy neighbour's hand, ye shall not oppress one another: According to the number of years after the jubile thou shalt buy of thy neighbour, and according unto the number of years of the fruits he shall sell unto thee: According to the multitude of years thou shalt increase the price thereof, and according to the fewness of years thou shalt diminish the price of it: for according to the number of the years of the fruits doth he sell unto thee.</p>
+<p><em>— Leviticus 25: 14-16.</em></p>
+</blockquote>
+<blockquote>
+<p>The land shall not be sold for ever: for the land is mine; for ye are strangers and sojourners with me.</p>
+<p><em>— Leviticus 25: 23.</em></p>
+</blockquote>
+<p>If geniuses are admitted to power, they will understand the usefulness of these reforms. You must also see to it that all the nations of the Earth unite to form only one government.'</p>
+<h2 id="world-government"><a class="header" href="#world-government">World Government</a></h2>
+<p>'The creation of a new worldwide currency and a common language would help you to establish a world government. The Auvergne dialect is no longer spoken in Clermont-Ferrand, and very soon, French will no longer be spoken in Paris, nor English in London, nor German in Frankfurt. Your scientists and linguists should unite and create a new language, inspired by all languages and made obligatory in all the schools of the world, as a second language.</p>
+<p>The same must be done with money. Worldwide currency values cannot be based on the franc, the dollar, or the yen, but must be based on a new currency created for the needs of the whole Earth, without depriving one group of people who would ask themselves why another currency has been chosen instead of their own.</p>
+<p>Finally, the trigger required to bring about such a union is the suppression of military conscription, which teaches only aggressiveness to young men. Professional armies must then be put at the service of the public.</p>
+<p>This must happen at the same time in all countries so as to provide an indispensable guarantee of security.'</p>
+<h2 id="your-mission"><a class="header" href="#your-mission">Your Mission</a></h2>
+<p>'As I have already told you, we know that our official arrival would accelerate many things. But we will wait until we see that human beings really want us to come, that they love us and respect us like the parents that we truly are, and that our spacecrafts will not be
+threatened by your destructive military forces.</p>
+<p>To achieve this, make it known throughout the world that you have met me, and repeat what I have said to you. Wise people will listen to you. Many will take you for a madman or a visionary, but I have already explained to you what to think of the imbecilic majority.</p>
+<p>You know the truth, and we will stay in contact with you by telepathy to give you confidence and additional information if we think it is necessary.</p>
+<p>What we want is to see if there are enough wise people on Earth. If a sufficiently large number of people follow you, then we will come openly. Where? At the place you will have prepared for our arrival.</p>
+<p>Have a residence built in a pleasant country with a mild climate, with seven rooms always ready to receive guests, each with a separate bathroom, a conference room able to accommodate twenty-one people, a swimming pool and a dining room capable of seating twenty-one people.</p>
+<p>This residence should be constructed in the middle of a park and should be protected from curious onlookers. The park should be entirely surrounded by walls to prevent anyone from seeing the residence and the swimming pool.</p>
+<p>The residence should be situated at a distance of at least one thousand meters from the walls around the park. It will have a maximum of two stories and should be further screened from view by an inner barrier of trees and bushes. Install two entrances in the surrounding wall, one to the south and another on the northern side.</p>
+<p>The residence will also have two entrances. There will be a terrace on the roof where a spacecraft of twelve meters in diameter may land. Access from that terrace to the interior is essential.</p>
+<p>The air space above and around the residence should not be under direct military or radar surveillance.</p>
+<p>You will try to ensure that the area where this residence is built -if possible larger than stipulated here- is treated as neutral territory by other nations and by the nation on whose territory it is located, by virtue of it being our embassy on Earth.</p>
+<p>You may live with your wife and children in the residence, which will be under your direction, and you will be able to have servants there and invite guests of your choosing. However, the area containing the seven rooms should be directly under the terrace, and it should be separated from the section used by human beings by a thick metal door, lockable from the inside, which is kept permanently closed. An aseptic chamber should be built at the entrance to the conference room.</p>
+<p>The financing of the project will be made possible through the help you will receive from those people who will believe in you, and therefore in us. They will be wise and intelligent, and they will be rewarded when we come.</p>
+<p>Keep a record, therefore, of those who contribute financially to the construction and upkeep of the residence, however modest their contribution.</p>
+<p>Also, in each nation throughout the world, appoint an individual who will be responsible for communicating the truth, and who will help others join together to spread it.</p>
+<p>Once a year, on a mountain near the residence, gather together from all over the world all those people who have heard about us through these writings and want us to come. Assemble the largest number of people possible, and have them think intensely about us and hope for our
+coming.</p>
+<p>When there are enough people, and when they wish intensely enough for us to come without any religious mysticism, but as responsible people respecting their creators, then we will land openly and give you our scientific knowledge as our heritage to all peoples of the Earth.</p>
+<p>If those with warlike temperaments are rendered harmless all over the whole world, then this will happen. If the love of life and humanity's love for us and itself are strong enough, yes, we will come openly.</p>
+<p>We will wait, and if human beings remain aggressive and continue to progress in a manner which is dangerous for other worlds, then we will destroy this civilization and its repositories of scientific wealth, and there will be another Sodom and Gomorrah, until such time as humanity becomes morally worthy of its level of scientific understanding.</p>
+<p>The future of humanity is in its own hands, and the truth is in yours. Communicate it throughout the world and do not be discouraged.</p>
+<p>We will never help you openly, or in any way that would give proof to the skeptics, since skepticism often goes hand in hand with aggressiveness. Intelligent people will believe you since what you will say contains nothing mystical.</p>
+<p>It is important to us that they believe you without any material proof. This proves to us more than anything else that they are intelligent and so are worthy to receive our scientific knowledge.</p>
+<p>Now go. You will not be forgotten if you succeed during your life on Earth — or even after. If necessary, we can wait until the time of your descendants to make our landing, because we can make you live again scientifically, just as we can resurrect all those who have led humanity along the path of human genius guided by the love of their creators — so long as their remains are preserved in coffins or tombs.</p>
+<p>The only help we will give you will be to appear in the skies more and more frequently from now on in order to make people aware of the problems, and make them want to learn more about the truth that you are transmitting.</p>
+<p>Gradually, thanks to these increased sightings, public awareness will also increase, and our presence will no longer trigger stupid adoration, but instead a deep desire within the population to make contact with us.</p>
+<p>You will call your movement <em>Madech</em> — the &quot;movement for welcoming the Elohim, creators of humanity&quot;, which carries in its initials a message, <em>Moise a devancé Elie et le Christ,</em> which means: Moses preceded Elijah and the Christ.</p>
+<p>In French this is:</p>
+<ul>
+<li>M: mouvement pour (movement for)</li>
+<li>A: l'accueil (the welcoming)</li>
+<li>D: des (of the)</li>
+<li>E: Elohim</li>
+<li>C: créateurs de (creators of)</li>
+<li>H: l'humanité (humanity).'</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="5-the-end-of-the-world.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="7-the-elohim.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="5-the-end-of-the-world.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="7-the-elohim.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

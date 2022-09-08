@@ -15,9 +15,7 @@ The scientists perfected their techniques and began creating bizarre little anim
  
 Since at that time, interplanetary and intergalactic explorations had also made progress, the scientists decided to set out for a distant planet where they could find most of the necessary conditions to pursue their experiments. They chose Earth where you live. Now I would like you to refer to the Bible where you will find traces of the truth about your past. These traces, of course, have been somewhat distorted by successive transcribers who could not conceive of such high technology and could therefore only explain what was described as being a mystical and supernatural force.
  
-Only the parts of the Bible that I will translate are important.
- 
-Other parts are merely poetic babblings of which I will say nothing.
+Only the parts of the Bible that I will translate are important. Other parts are merely poetic babblings of which I will say nothing.
  
 I am sure you can appreciate that, thanks to the law, which said that the Bible had always to be re-copied without changing even the smallest detail, the deepest meaning has remained intact throughout the ages, even if the text has been larded with mystical and futile sentences.
 So let us start with the first chapter of the Book of Genesis: 
@@ -99,7 +97,9 @@ It was at that time that the most skillful among us wanted to create an artifici
 
 "test tube children" who might come to threaten their world. They feared that these new human beings could become a danger if their mental capacities or powers turned out to be superior to those of their creators. So we had to agree to leave the new humans to live in a very primitive way without letting them know anything scientific, and we mystified our actions. It is easy to work out how many teams of creators did this - each race on Earth corresponds to a team of creators.
 
-Let Us make man in Our image, according to Our likeness; let them have dominion over the fish of the sea, over the birds of the air, and over the cattle, over all the earth and over every creeping thing that creeps on the earth. *Genesis 1: 26.*
+> Let Us make man in Our image, according to Our likeness; let them have dominion over the fish of the sea, over the birds of the air, and over the cattle, over all the earth and over every creeping thing that creeps on the earth.
+> 
+> *— Genesis 1: 26.*
 
 "In our image!" You can see that the resemblance is striking. That is when the trouble started for us. The team located in the country you now call Israel, which at the time was not far from Greece and Turkey on the original continent, was composed of brilliant creators who were perhaps the most talented team of all.
 
@@ -170,7 +170,9 @@ Soldiers with atomic disintegration weapons were placed at the entrance to the c
 
 The creators in exile who were left under military surveillance, urged the human beings to bring them food in order to show their own superiors that the newly created people were good, and that they would never turn against their creators. Thus they managed to obtain permission for the leaders of these first human beings to benefit from the "tree of life", and this explains how they lived so long: Adam lived for 930 years, Seth for 912 years and Enos for 905 years, and so on as is stated in *Genesis,* Chapter 5, Verses 1-11.
 
-And it came to pass, when men began to multiply on the face of the earth, and daughters were born unto them, that the sons of Elohim saw the daughters of men that they were fair; and they took them wives of all which they chose. *Genesis 6: 1-2.*
+> And it came to pass, when men began to multiply on the face of the earth, and daughters were born unto them, that the sons of Elohim saw the daughters of men that they were fair; and they took them wives of all which they chose. 
+> 
+> *— Genesis 6: 1-2.*
 
 The creators living in exile took the most beautiful daughters of humanity and made them their wives.
 

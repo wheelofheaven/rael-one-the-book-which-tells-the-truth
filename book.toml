@@ -7,6 +7,6 @@ multilingual = false
 src = "src"
 
 [output.html]
-git-repository-url = "https://github.com/rust-lang/mdBook"
+git-repository-url = "https://github.com/wheelofheaven/rael-one-the-book-which-tells-the-truth"
 git-repository-icon = "fa-github"
 

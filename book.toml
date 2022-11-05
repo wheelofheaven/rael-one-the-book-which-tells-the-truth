@@ -9,4 +9,6 @@ src = "src"
 [output.html]
 git-repository-url = "https://github.com/wheelofheaven/rael-one-the-book-which-tells-the-truth"
 git-repository-icon = "fa-github"
+additional-css = ["./theme/catppuccin.css", "./theme/catppuccin-highlight.css"]
 
+[output.epub]
